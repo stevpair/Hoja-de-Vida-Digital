@@ -22,7 +22,7 @@
             <a href="experiencia.html">Experiencia</a>
         </nav>
         <br>
-        <table border="1">
+        <table border="2", cellpadding="10", cellspacing="0">
             <thead>
                 <tr>
                     <th>Año</th>
@@ -33,18 +33,54 @@
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>2012</td>
+                    <td>Colegio Gerardo Paredes</td>
+                    <td>Bogota</td>
+                    <td>Si</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>2012</td>
+                    <td>SENA</td>
+                    <td>Bogota</td>
+                    <td>Si</td>
                 </tr>
             </tbody>
         </table>
+        <br>
+        <h2>Agregar Estudios</h2>
+        <form autocomplete="on" name="Agregar_Estudios">
+            <p>
+                <label for="año">Año:</label>
+                <select name="opciones">
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                </select>
+            </p>
+            <p>
+                <label name="institucion">Institucion:</label>
+                <input type="text" name="" value="">
+            </p>
+            <p>
+                <label name="lugar">Lugar:</label>
+                <textarea name="comentarios" rows="1" cols="30"></textarea>
+            </p>
+            <p>
+                <label for="culmino">¿Culmino?</label>
+                <input type="radio" id="culmino">
+                <label for="si">Si</label>
+                <input type="radio" id="culmino">
+                <label for="no">No</label>
+            </p>
+            <p>
+                <button type="button" name="enviar" value="Enviar">Enviar</button>
+            </p>
+        </form>
     </body>
 </html>
